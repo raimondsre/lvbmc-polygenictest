@@ -22,8 +22,12 @@
                 "format": "file-path",
                 "exists": true,
                 "errorMessage": "Individual genome file has to be provided in the thrid column of samplesheet"
+            },
+            "sex": {
+                "type": "integer",
+                "errorMessage": "Fourth column has to provide sex information as integer 1 (male) or 2 (female)"
             }
         },
-        "required": ["sample", "trait","genome_file"]
+        "required": ["sample", "trait","genome_file","sex"]
     }
 }
