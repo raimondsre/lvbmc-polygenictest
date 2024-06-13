@@ -31,7 +31,7 @@ include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_poly
 //   This is an example of how to use getGenomeAttribute() to fetch parameters
 //   from igenomes.config using `--genome`
 params.fasta = getGenomeAttribute('fasta')
-params.output_dir = "."
+// params.output_dir = "."
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NAMED WORKFLOWS FOR PIPELINE
@@ -49,7 +49,7 @@ workflow LVBMC_POLYGENICTEST {
     main:
 
     //
-    // WORKFLOW: Run pipeline
+    // WORKFLOW: Run pipeline 
     //
     POLYGENICTEST (
         samplesheet
