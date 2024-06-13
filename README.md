@@ -26,7 +26,7 @@
 ## Usage
 
 > [!NOTE]
-> If you are new to Nextflow, please refer to [this page](https://nf-co.re/docs/usage/installation).
+> If you are new to Nextflow, please refer to [this page](https://www.nextflow.io/docs/latest/index.html).
 
 <!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
      Explain what rows and columns represent. For instance (please edit as appropriate):
