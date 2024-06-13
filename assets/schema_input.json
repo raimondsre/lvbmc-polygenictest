@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/lvbmc/polygenictest/master/assets/schema_input.json",
-    "title": "lvbmc/polygenictest pipeline - params.input schema",
+    "$id": "https://raw.githubusercontent.com/raimondsre/lvbmc-polygenictest/master/assets/schema_input.json",
+    "title": "raimondsre/lvbmc-polygenictest pipeline - params.input schema",
     "description": "Schema for the file provided with params.input",
     "type": "array",
     "items": {
