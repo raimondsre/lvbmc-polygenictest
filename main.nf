@@ -57,6 +57,7 @@ workflow LVBMC_POLYGENICTEST {
 
     emit:
     multiqc_report = POLYGENICTEST.out.multiqc_report // channel: ${params.output_dir}/multiqc_report.html
+    fastqc_report = POLYGENICTEST.out.fastqc_report // channel: /path/to/multiqc_report.html
 
 }
 /*
