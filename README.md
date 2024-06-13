@@ -72,4 +72,4 @@ lvbmc/polygenictest was originally written by raimondsre.
 
 <!-- TODO nf-core: Add bibliography of tools and data used in your pipeline -->
 
-An extensive list of references for the tools used by the pipeline can be found in the [`CITATIONS.md`](CITATIONS.md) file.
+An extensive list of references for the tools used by the pipeline can be found in the [`CITATIONS.md`](CITATIONS.md) file. 
