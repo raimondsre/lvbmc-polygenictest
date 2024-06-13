@@ -8,7 +8,7 @@ process VCF_conversion {
         'biocontainers/plink2:2.00a5--h4ac6f70_0' }"
 
     input:
-    tuple val(meta), val(trait), path(genome_file)
+    tuple val(meta), val(trait), path(genome_file), val(sex)
 
     output:
     tuple val(meta), path("*.fam"), emit: fam
@@ -24,7 +24,7 @@ process VCF_conversion {
     def mem = memory_in_mb > 10000 ? 10000 : (memory_in_mb < 100 ? 100 : memory_in_mb)
     output = "${meta}_${trait}_${prefix}"
     """
-
+    echo -e "0\\t${meta}\\t${sex}" > sex.fam
     plink2 \\
         --threads $task.cpus \\
         --memory $mem \\
@@ -34,6 +34,8 @@ process VCF_conversion {
         --missing vcols=fmissdosage,fmiss \\
         --vcf $genome_file \\
         --allow-extra-chr \\
+        --update-sex sex.fam \\
+        --split-par 2781479 155701383 \\
         --make-bed \\
         --out ${output}
 
