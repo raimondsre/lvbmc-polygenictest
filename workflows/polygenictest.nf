@@ -25,19 +25,17 @@ workflow POLYGENICTEST {
     main:
 
     ch_versions = Channel.empty()
-    ch_multiqc_files = Channel.empty()
 
     //
-    // MODULE: Run FastQC
+    // MODULE: Run VCF_conversion
     //
-    FASTQC (
+    VCF_conversion (
         ch_samplesheet
     )
-    ch_multiqc_files = ch_multiqc_files.mix(FASTQC.out.zip.collect{it[1]})
-    ch_versions = ch_versions.mix(FASTQC.out.versions.first())
+    ch_versions = ch_versions.mix(VCF_conversion.out.versions.first())
 
     emit:
-    fastqc_report = FASTQC.out.html.toList() // channel: /path/to/multiqc_report.html
+    vcf_conversion_report = VCF_conversion.out.fam.toList() // channel: /path/to/multiqc_report.html
     
     //
     // Collate and save software versions

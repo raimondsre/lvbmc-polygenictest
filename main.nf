@@ -56,7 +56,7 @@ workflow LVBMC_POLYGENICTEST {
     )
 
     emit:
-    fastqc_report = POLYGENICTEST.out.fastqc_report // channel: /path/to/multiqc_report.html
+    vcf_conversion_report = POLYGENICTEST.out.vcf_conversion_report // channel: /path/to/multiqc_report.html
 
 }
 /*
@@ -99,7 +99,7 @@ workflow {
         params.outdir,
         params.monochrome_logs,
         params.hook_url,
-        LVBMC_POLYGENICTEST.out.fastqc_report
+        LVBMC_POLYGENICTEST.out.vcf_conversion_report
     )
 }
 
