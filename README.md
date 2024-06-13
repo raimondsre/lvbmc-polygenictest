@@ -2,11 +2,11 @@
 [![run with conda](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
 [![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
 [![run with singularity](https://img.shields.io/badge/run%20with-singularity-1d355c.svg?labelColor=000000)](https://sylabs.io/docs/)
-[![Launch on Seqera Platform](https://img.shields.io/badge/Launch%20%F0%9F%9A%80-Seqera%20Platform-%234256e7)](https://cloud.seqera.io/launch?pipeline=https://github.com/lvbmc/polygenictest)
+[![Launch on Seqera Platform](https://img.shields.io/badge/Launch%20%F0%9F%9A%80-Seqera%20Platform-%234256e7)](https://cloud.seqera.io/launch?pipeline=https://github.com/raimondsre/lvbmc-polygenictest)
 
 ## Introduction
 
-**lvbmc/polygenictest** is a bioinformatics pipeline that calculates individual polygenic score percentile in the population.
+**raimondsre/lvbmc-polygenictest** is a bioinformatics pipeline that calculates individual polygenic score percentile in the population.
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
@@ -49,7 +49,7 @@ Now, you can run the pipeline using:
 <!-- TODO nf-core: update the following command to include all required parameters for a minimal example -->
 
 ```bash
-nextflow run lvbmc/polygenictest \
+nextflow run raimondsre/lvbmc-polygenictest \
    -profile <docker/singularity/.../institute> \
    --input samplesheet.csv \
    --outdir <OUTDIR>
@@ -61,14 +61,14 @@ nextflow run lvbmc/polygenictest \
 
 ## Credits
 
-lvbmc/polygenictest was originally written by raimondsre.
+raimondsre/lvbmc-polygenictest was originally written by raimondsre.
 
 <!-- TODO nf-core: If applicable, make list of people who have also contributed -->
 
 ## Citations
 
 <!-- TODO nf-core: Add citation for pipeline after first release. Uncomment lines below and update Zenodo doi and badge at the top of this file. -->
-<!-- If you use lvbmc/polygenictest for your analysis, please cite it using the following doi: [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) -->
+<!-- If you use raimondsre/lvbmc-polygenictest for your analysis, please cite it using the following doi: [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) -->
 
 <!-- TODO nf-core: Add bibliography of tools and data used in your pipeline -->
 
