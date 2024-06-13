@@ -1,6 +1,6 @@
 {
-    "name": "lvbmc/polygenictest",
-    "homePage": "https://github.com/lvbmc/polygenictest",
+    "name": "raimondsre/lvbmc-polygenictest",
+    "homePage": "https://github.com/raimondsre/lvbmc-polygenictest",
     "repos": {
         "https://github.com/nf-core/modules.git": {
             "modules": {

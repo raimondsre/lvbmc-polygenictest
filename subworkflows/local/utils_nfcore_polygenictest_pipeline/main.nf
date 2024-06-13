@@ -1,5 +1,5 @@
 //
-// Subworkflow with functionality specific to the lvbmc/polygenictest pipeline
+// Subworkflow with functionality specific to the raimondsre/lvbmc-polygenictest pipeline
 //
 
 /*
