@@ -83,7 +83,7 @@ workflow PIPELINE_INITIALISATION {
     Channel
         .fromSamplesheet("input")
         .map {
-            meta, trait, genome_file -> [ meta, trait, genome_file ]
+            meta, trait, genome_file -> [ meta.id, trait, genome_file ]
         }
         .set { ch_samplesheet }
 
