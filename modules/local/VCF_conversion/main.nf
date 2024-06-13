@@ -8,7 +8,7 @@ process VCF_conversion {
         'biocontainers/plink2:2.00a5--h4ac6f70_0' }"
 
     input:
-    set val(meta), val(trait), path(genome_file)
+    tuple val(meta), val(trait), path(genome_file)
 
     output:
     tuple val(meta), path("*.fam"), emit: fam
