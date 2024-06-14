@@ -38,7 +38,9 @@ process VCF_conversion {
         --make-bed \\
         --out ${output}
 
-    
+    zgrep -v '^#' PGS000869_hmPOS_GRCh38.txt.gz | cut -f1,4,6 | gzip > PGS000869_hmPOS_GRCh38.relabel.txt.gz
+
+
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
         plink2: \$(plink2 --version 2>&1 | sed 's/^PLINK v//; s/ 64.*\$//' )
