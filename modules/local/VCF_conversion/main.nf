@@ -28,7 +28,6 @@ process VCF_conversion {
     plink2 \\
         --threads $task.cpus \\
         --memory $mem \\
-        --set-all-var-ids '@:#:\$r:\$a' \\
         --new-id-max-allele-len 40 missing \\
         --max-alleles 2 \\
         --missing vcols=fmissdosage,fmiss \\
@@ -39,6 +38,7 @@ process VCF_conversion {
         --make-bed \\
         --out ${output}
 
+    
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
         plink2: \$(plink2 --version 2>&1 | sed 's/^PLINK v//; s/ 64.*\$//' )
